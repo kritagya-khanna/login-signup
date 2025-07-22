@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a202c;
+  --bg-login-signin-button: rgb(4, 4, 180);
+  --text-login-signin-button: rgb(210, 210, 210); 
+}
+
+body{
+  margin: 0px;
+  padding: 0px;;
+}
