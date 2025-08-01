@@ -5,12 +5,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
+//to allow requests from frontend
 app.use(cors());
+//to parse json
 app.use(express.json());
 
-app.get('/', (req, res) =>{
-    res.json({message : "hello"});
-})
+//routes
+const useRoutes = require('./routes');
+app.use('/auth', useRoutes);
 
 app.listen(process.env.PORT || 5000, () => {
     console.log("hello");
